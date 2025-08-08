@@ -498,7 +498,7 @@ body {
 }
 
 .services-bg-1 {
-    background-image: url("../../public/assets/service-bg-1.svg");
+    background-image: url("../svg/service-bg-1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -508,7 +508,7 @@ body {
 }
 
 .services-bg-2 {
-    background-image: url("../../public/assets/service-bg-2.jpg");
+    background-image: url("../images/service-bg-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -661,12 +661,9 @@ body {
 
 .photos-swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.photos-swiper .swiper-wrapper {
-    height: 100%;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    height: 400px;
 }
 
 .photos-swiper .swiper-slide {
@@ -677,41 +674,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 279px;
-    transition: scale 300ms ease;
 }
 
-.photos-swiper .swiper-slide::after {
+.photos-swiper .swiper-slide .photo__imgbox::after {
     content: "";
     display: block;
     padding-bottom: 100%;
 }
 
-.photos-swiper .swiper-slide-prev {
-    scale: 0.8;
-}
-
-.photos-swiper .swiper-slide-next {
-    scale: 0.8;
-}
-
-.photos-swiper .swiper-slide-active {
-    scale: 1;
-}
-
-.photos-swiper .swiper-slide img {
-    /*  position: absolute;
+.photos-swiper .swiper-slide .photo__imgbox img {
+    position: absolute;
     top: 0;
-    left: 0;*/
-    /* 
-    height: 100%;*/
+    left: 0;
+    height: 100%;
     width: 100%;
-    /*  display: block;
     object-fit: cover;
-    object-position: center;*/
+    object-position: center;
+    /* width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center; */
 }
 
-
+.photo__imgbox {
+    width: 100%;
+    position: relative;
+}
 
 .about {
     margin-bottom: 120px;
@@ -735,7 +723,6 @@ body {
     max-width: 762px;
     margin-top: 22px;
     position: relative;
-    height: 466px;
 }
 
 .about__text {
@@ -916,7 +903,7 @@ body {
     height: 320px;
     margin-top: 140px;
     margin-right: -40px;
-    background-image: url(../../public/assets/track.png);
+    background-image: url(../images/track.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -931,8 +918,6 @@ body {
 }
 
 .map {
-
-
     position: relative;
 }
 
@@ -940,7 +925,7 @@ body {
 
 .map__bg {
     height: 560px;
-    background-image: url(../../public/assets/map.jpg);
+    background-image: url(../images/map.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
