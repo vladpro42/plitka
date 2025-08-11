@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', event => {
     const swiperPhotos = new Swiper(".photos-swiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         loop: true,
         direction: "horizontal",
         spaceBetween: 32,

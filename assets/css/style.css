@@ -267,6 +267,12 @@ body {
     background-color: var(--color-link);
 }
 
+.swiper__item {
+    width: 100%;
+}
+
+
+
 .top-slider__content {
     display: flex;
     align-items: center;
@@ -432,6 +438,11 @@ body {
 .goods__img img {
     position: absolute;
     right: -38px;
+    top: 0;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
 }
 
 .goods__content {
@@ -590,7 +601,7 @@ body {
 
 .advantage__item {
     border-left: 1px solid #c4c4c4;
-    padding: 64px 64px;
+    padding: 64px;
     height: 290px;
     display: flex;
     flex-direction: column;
@@ -744,10 +755,13 @@ body {
 
 .about__inner {
     display: flex;
+
     align-items: start;
     justify-content: center;
     margin-bottom: 150px;
 }
+
+.about__img img { max-width: 626px; height: auto; object-fit: cover; }
 
 .about__content {
     padding: 47px 47px 56px 47px;
